@@ -47,94 +47,45 @@
     ></script>
     <style>
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
       body,
       html {
-        /*margin: 0;
-        padding: 0;*/
-        width: 100%;
         height: 100%;
-        /* background-image: url(IMG/XVAZUL.png); */
-        /*background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;*/
+        margin: 0;
+        overflow-x: hidden;
       }
-
       .container {
-        background-image: url(IMG/XVAZUL.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
         width: 100%;
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /*position: fixed;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 9999;
-        text-align: center;*/
-      }
-
-      .container img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
-      .btn-custom2 {
-        position: absolute;
-        display: inline-flex;
-        bottom: 2%;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 12px 24px;
-        color: white;
-        cursor: pointer;
-        cursor: pointer;
-        align-items: center;
-        background-image: url(IMG/BOTONAZULCIELO.png);
-        background-size: contain;
-        background-repeat: no-repeat;
+        background-image: url(IMG/xvAzulFondo.png);
+        background-size: cover;
         background-position: center;
-        border-radius: 20px;
-        text-decoration: none;
-        font-weight: bold;
-        font-family: sans-serif;
-        gap: 8px;
-        height: 60px;
-        min-width: 150px;
-        background-size: contain;
-        font-family: "Geologica", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        font-variation-settings: "slnt" 0, "CRSV" 0, "SHRP" 0;
+        background-repeat: no-repeat;       
       }
 
-      @media (max-width: 600px) {
-        .boton {
-          font-size: 14px;
-          padding: 10px 20px;
-        }
+      .boton-inferior {
+        position: absolute;
+        bottom: 5%;   /*Borde inferior*/
+        left: 5%;    /*Borde izquierdo*/
+        width: 90vw;  /*Ancho del boton*/
+        height: 20vh;   /*Altura del boton*/
+        background: transparent;
+        /* background-color: rgb(207, 20, 20, 0.0); */
+        border: none;
+        cursor: pointer;
+        z-index: 10;
       }
+   
     </style>
   </head>
   <body>
-    <div class="container" style="padding-bottom: 100%;">
-      <a
-        href="https://www.google.com/maps?q=20.6736,-103.344"
+    <div class="container">
+      <!-- style="background-color: blue;" -->
+      <a  
+        href="https://maps.app.goo.gl/dre7a4VtJYtPP3KC9"
         target="_blank"
-        class="btn btn-custom2"
-      >
-        <i class="fas fa-map-marker-alt"></i>&nbsp;UBICACIÓN</a
+        class="boton-inferior"
       >
     </div>
   </body>
 </html>
+
